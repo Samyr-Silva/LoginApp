@@ -1,0 +1,25 @@
+<app-default-login-page
+    title="Login into your account"
+    primaryBtnText="Login Now"
+    secondaryBtnText="Sign Up"
+>
+<form  [formGroup]="loginForm">
+    <app-primary-input
+    formName="email"
+    label="Email"
+    type="email"
+    placeholder="thisIsaexaple.gmail.com "
+    >
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-email-icon-download-in-svg-png-gif-file-formats--mail-envelope-message-miscellaneous-pack-icons-1713291.png?f=webp&w=256"/> 
+    </app-primary-input>
+    <app-primary-input
+    formName="password"
+    label="Password"
+    type="password"
+    placeholder=""
+    >
+    <img src="https://e7.pngegg.com/pngimages/504/217/png-clipart-computer-icons-padlock-padlock-technic-desktop-wallpaper.png"/> 
+    </app-primary-input>
+</form>
+</app-default-login-page>
+
