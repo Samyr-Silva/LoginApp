@@ -1,0 +1,50 @@
+<app-default-login-page
+    title="Sign in and start today"
+    primaryBtnText="Sign Up"
+    secondaryBtnText="Login Now "
+    (submit)="submit()" 
+    (navigate)="navigate()" 
+    [disablePrimaryBtn]="!signupForm.valid "
+
+>
+<form [formGroup]="signupForm">
+    <app-primary-input
+    inputName="name"
+    formControlName="name"
+    label="Your Name"
+    type="text"
+    placeholder="Jessica Doe"
+    >
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-email-icon-download-in-svg-png-gif-file-formats--mail-envelope-message-miscellaneous-pack-icons-1713291.png?f=webp&w=256"/> 
+    </app-primary-input>
+    <app-primary-input
+    inputName="email" 
+    formControlName="email"
+    label="Email"
+    type="email"
+    placeholder="thisIsaexaple.gmail.com "
+    >
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-email-icon-download-in-svg-png-gif-file-formats--mail-envelope-message-miscellaneous-pack-icons-1713291.png?f=webp&w=256"/> 
+    </app-primary-input>
+    <app-primary-input
+    inputName="password"
+    formControlName="password"
+    label="Password"
+    type="password"
+    placeholder=""
+    >
+    <img src="https://e7.pngegg.com/pngimages/504/217/png-clipart-computer-icons-padlock-padlock-technic-desktop-wallpaper.png"/> 
+    </app-primary-input>
+    <app-primary-input
+    inputName="passwordConfirm"
+    formControlName="passwordConfirm"
+    label="Confirm your Password"
+    type="password"
+    placeholder=""
+    >
+    <img src="https://e7.pngegg.com/pngimages/504/217/png-clipart-computer-icons-padlock-padlock-technic-desktop-wallpaper.png"/> 
+    </app-primary-input>
+     
+</form>
+</app-default-login-page>
+
