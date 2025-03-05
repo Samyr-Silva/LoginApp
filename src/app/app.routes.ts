@@ -2,6 +2,8 @@ import { Routes } from '@angular/router';
 import { DefaultLoginPageComponent } from './components/default-login-page/default-login-page.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { UserComponent } from './pages/user/user.component';
+import { AuthGuard } from './services/auth-guard.service';
 export const routes: Routes = [
     {
         path: "login",
@@ -10,5 +12,10 @@ export const routes: Routes = [
     {
         path: "signup",
         component: SignupComponent
+    },
+    {
+        path: "user",
+        component: UserComponent,
+        canActivate: [AuthGuard]
     }
 ];
